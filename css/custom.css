@@ -1,0 +1,51 @@
+body {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  color: #333;
+  background-color: #3F3F3F !important;
+}
+
+.areas{
+  width: 100% ;
+  height:600px;
+  padding-top: 0px;
+  background-color: black;
+  color: green;
+  font-family: 'Roboto Mono', monospace!important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+h1{
+  color: white;
+  font-family: arial;
+  size: 38px;
+}
+
+
+h2{
+	color: white;
+	font-size: 23px;
+}
+.areas2{
+  width: 100% ;
+  height:300px;
+  background-color: black;
+  color: red;
+  font-family: consolas !important;
+  font-size: 18px !important;
+}
+.areas3{
+  width: 100% ;
+  height:300px;
+  background-color: #201889;
+  color: white;
+  font-family: consolas !important;
+  font-size: 30px !important;
+}
+
+
+.Registros{
+  color: white;
+  font-size: 28px;
+  font-family: 'Orbitron', sans-serif;
+}
