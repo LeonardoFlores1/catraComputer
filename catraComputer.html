@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <title>CatraComputer</title>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="index.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+<!---->
+<body background="img/pacman.jpg">
+  <div class="container-fluid">
+    <div class="row barratitulo">
+      <div class="col-md-12 col-lg-12 col-center">
+        <h1 style="font-family:monospace; ;color:#3b5998;text-align: center;font-size:80px;opacity: 1.0">CatraComputer</h1>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-md-6">
+        <div class="btn-group btn-group-lg botones" role="group" aria-label="Basic example">
+         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter" style="background-color: #b9d8f0;border-color:#b9d8f0  ">Cargar</button>
+          <button type="button" class="btn btn-success" onclick="ejecutar()" data-toggle="modal" data-target="#ModalEjecutar" style="background-color: #00fe00;border-color: #00fe00">Ejecutar</button>
+          <button type="button" class="btn btn-danger" onclick="depurar()" data-toggle="modal" data-target="#ModalDepurar">Depurar</button>
+          
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-lg-3" style="background-color:rgba(30,226,9,0.3); padding:10px 0px 10px 0px; border-radius: 0px;">
+          <div class="Registros" id="AC">&nbsp AC=</div>
+        </div>
+        <div class="col-lg-3" style="background-color:rgba(254,138,0,0.5); ; padding:10px 0px 10px 0px; border-radius: 0px;">
+          <div class="Registros" id="PC">&nbsp PC=</div>
+        </div>
+        <div class="col-lg-3" style="background-color: rgba(24,213,247,0.3); padding:10px 0px 10px 0px; border-radius: 0px;">
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row">
+          <div class="col-md-3 col-lg-3"></div>
+        <div class="col-md-6 col-lg-6">
+          <h2 align="center">Contenido</h2>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-lg-3"></div>
+      <div class="col-md-6 col-lg-6 col-center" background="img/zelda.png">
+        <textarea id="campoPrograma" class="panelUno lined" rows="10" cols="60" >
+         
+          </textarea>
+      </div>
+
+    </div>
+  </div>
+  <!---->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered" role="document"   background="img/zelda.png">
+      <div class="modal-content"  background="img/zelda.png">
+        <div class="modal-header"  background="img/zelda.png">
+          <h5 class="modal-title" id="exampleModalLongTitle">Elige tu archivo, con codigo LMCC</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <input type="file" id="fileInput">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: red">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ejecucion-->
+  <div class="modal fade" id="ModalEjecutar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" background="img/zelda.png">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" background="img/zelda.png">
+        <div class="modal-header" background="img/zelda.png" >
+          <h5 class="modal-title" id="exampleModalLongTitle" align="center">Ejecutado</h5>
+          <textarea id="campoEjecucion" class="panelDos"></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--modal Depuracion-->
+<div class="modal fade" id="ModalDepurar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Depurado</h5>
+  
+          <textarea disabled="disabled" id="campoDepuracion" class="panelTres"></textarea>
+        </div>
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootbox.min.js"></script>
+  
+
+<!--<script>
+    $(function () {
+      $(".lined").linedtextarea(
+
+      );
+    });
+  </script>-->
+
+</body>
+
+</html>
