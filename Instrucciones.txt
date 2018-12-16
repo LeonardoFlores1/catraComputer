@@ -1,0 +1,7 @@
+Ingeniero, se adjuntan 2 programas para probar el proyecto.
+-un programa que lee 2 numeros y escribe el mayor.
+-un programa que lee 2 numeros, los suma y escribe la respuesta.
+
+Los integrantes del grupo:
+Leonardo Antonio Flores 20131006843	
+Hector Bardales 20141011614
